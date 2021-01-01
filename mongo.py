@@ -24,7 +24,7 @@ coll = conn[DATABASE][COLLECTION]
 
 
 
-""" Insert a single document """
+# """ Insert a single document """
 # new_doc = {
 #     "first": "douglas",
 #     "last": "adams",
@@ -36,7 +36,7 @@ coll = conn[DATABASE][COLLECTION]
 # }
 # coll.insert(new_doc)
 
-""" Insert multipe documents """
+# """ Insert multipe documents """
 # new_docs = [{
 #     "first": "terry",
 #     "last": "pratchett",
@@ -56,21 +56,21 @@ coll = conn[DATABASE][COLLECTION]
 # }]
 # coll.insert_many(new_docs)
 
-""" Find documents with 'first' name set to 'douglas' """
+# """ Find documents with 'first' name set to 'douglas' """
 # documents = coll.find({"first": "douglas"})
 
-""" Delete documents with 'first' name set to 'douglas' """
+# """ Delete documents with 'first' name set to 'douglas' """
 # coll.remove({"first": "douglas"})
 # documents = coll.find()
 
-""" Update a single document (first one only) """
+# """ Update a single document (first one only) """
 # coll.update_one(
 #     {"nationality": "american"},
 #     {"$set": {"hair_color": "maroon"}}
 # )
 # documents = coll.find({"nationality": "american"})
 
-""" Update all documents """
+# """ Update all documents """
 # coll.update_many(
 #     {"nationality": "american"},
 #     {"$set": {"hair_color": "maroon"}}
